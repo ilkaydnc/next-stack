@@ -1,5 +1,6 @@
 import { GetServerSideProps, NextPage } from 'next'
 import styled from 'styled-components'
+import Button from '../components/Button'
 
 interface Props {
   launch: {
@@ -23,6 +24,7 @@ const IndexPage: NextPage<Props> = ({ launch }) => {
         {launch.rocket} will take off from {launch.site} on{' '}
         {date.toDateString()}
       </p>
+      <Button>Button</Button>
     </main>
   )
 }
