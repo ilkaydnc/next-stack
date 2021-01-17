@@ -10,6 +10,7 @@ All your needs have been configured to developing React applications.
 - Prettier for keep coding in a consistent style
 - Husky for make sure the code will stay clean before each commit
 - Maintainable folder structure
+- Storybook for testing UI components
 
 ## 🏃 Getting Started
 
@@ -35,6 +36,8 @@ You can start editing the page by modifying `pages/index.tsx`. The page auto-upd
 - `start` - Run the production server
 - `test` - Test `*.test.ts` files on your project
 - `lint` - Lint `js, jsx, ts, tsx` files on your project
+- `storybook` - Run the storybook server on localhost:6006
+- `build-storybook` - Build Storybook as a static web application
 
 ## 🏛️ Project Folder Structure
 
@@ -47,7 +50,9 @@ You can start editing the page by modifying `pages/index.tsx`. The page auto-upd
 │   └─index.tsx
 │ └─context
 │ └─components
-│   └─Button.tsx
+│   └─Button
+│     └─index.tsx
+│     └─Button.stories.tsx
 ```
 
 ## 📜 MIT License
