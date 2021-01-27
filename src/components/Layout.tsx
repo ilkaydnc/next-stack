@@ -54,7 +54,7 @@ interface Props {
   children: ReactNode
 }
 
-const Layout = ({ children }: Props): ReactNode => {
+const Layout = ({ children }: Props): JSX.Element => {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
