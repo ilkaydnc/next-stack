@@ -16,7 +16,16 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "preserve",
-    "baseUrl": "./src/"
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": ["src/components/*"],
+      "@containers/*": ["src/containers/*"],
+      "@contexts/*": ["src/contexts/*"],
+      "@hooks/*": ["src/hooks/*"],
+      "@styles/*": ["src/styles/*"],
+      "@public/*": ["public/*"],
+      "@test/*": ["test/*"]
+    }
   },
   "include": ["src", "src/pages"],
   "exclude": ["node_modules"]
